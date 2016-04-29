@@ -5,6 +5,8 @@ Are you experiencing Election Fatigue? Has the 2016 Electoral Circus worn you do
 
 For more information on Chris & Alex's historic campaign, visit https://www.flatearththeatre.com
 
+[Direct download of CRX file.](https://github.com/jscaltreto/chris-and-alex/blob/master/ChrisAndAlex.crx?raw=true)
+
 Installation
 ------------
 
