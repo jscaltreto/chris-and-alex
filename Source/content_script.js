@@ -1,17 +1,42 @@
 walk(document.body);
 
+function getRegExp(){
+	var arrCandidates = [ 
+	  "Donald Trump",
+	  "Donald J. Trump",
+	  "Donald John Trump",
+	  "Trump",
+	  "Hillary Clinton",
+	  "Hillary Rodham Clinton",
+	  "Hillary Diane Rodham Clinton",
+	  "Hillary",
+	  "Clintons",
+	  "Clinton",
+	  "Bernie Sanders",
+	  "Bernard Sanders",
+	  "Bernard \"Bernie\" Sanders",
+	  "John Richard Kasich",
+	  "John Kasich",
+	  "Kasich",
+	  "Sanders",
+	  "Bernie",
+	  "Ted Cruz",
+	  "Cruz"
+	];
+	 
+	var strCandidates = arrCandidates.join('|');
+
+	return new RegExp(strCandidates,"gi");
+}
+
+function getNewString(){
+	return "Chris & Alex";
+}
+
 function walk(node) 
 {
-	// I stole this function from here:
-	// http://is.gd/mwZp7E
-	
 	var child, next;
 	
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
-		return;
-	}
-
 	switch ( node.nodeType )  
 	{
 		case 1:  // Element
@@ -32,16 +57,11 @@ function walk(node)
 	}
 }
 
-function handleText(textNode) 
+function handleText(textNode, regEx, newString) 
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(getRegExp(), getNewString());
 	
 	textNode.nodeValue = v;
 }
-
-
