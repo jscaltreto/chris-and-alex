@@ -5,6 +5,9 @@
 	"description": "Replaces names of all major 2016 US Presidential Candidates with 'Chris & Alex'. Because \"Two Heads Are Better Than One!\"",
 	"author": "Flat Earth Theatre",
 	"homepage_url": "https://www.flatearththeatre.com",
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+            "128": "icon128.png" },
 	"content_scripts": 
 	[
 		{
