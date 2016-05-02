@@ -13,3 +13,9 @@ Installation
 ------------
 
 In Chrome, choose Window > Extensions.  Drag ChrisAndAlex.crx into the page that appears.
+
+Firefox Users
+-------------
+For Firefox users, you can now [install this addon via AMO](https://addons.mozilla.org/en-US/firefox/addon/chris-alex-election-simplifier/).
+
+You can also view the source for the Firefox version in the [firefox branch](https://github.com/jscaltreto/chris-and-alex/tree/firefox). *Hint:* it's basically the same.
