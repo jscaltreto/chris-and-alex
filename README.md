@@ -10,3 +10,5 @@ Our team of dedicated developers has worked tirelessly to bring make this extens
 For more information on Chris & Alex's historic campaign, visit https://www.flatearththeatre.com
 
 [Direct download of XPI file.](https://github.com/jscaltreto/chris-and-alex/blob/firefox/ChrisAndAlex.xpi?raw=true)
+
+[Install via addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/chris-alex-election-simplifier/)
